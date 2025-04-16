@@ -1,5 +1,7 @@
-import controllers.MetodoBusqueda;
+//import controllers.MetodoBusqueda;
+import controllers.MetodoBusquedaBinario;
 import models.Persona;
+//import controllers.MetodoBusquedaBinario;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -12,7 +14,11 @@ public class App {
         personas[4] = new Persona(105,"Luis");
         personas[5] = new Persona(106,"Sofia");
         personas[6] = new Persona(107,"Pedro");
-        MetodoBusqueda metodoBusqueda = new MetodoBusqueda(personas);
+
+        //MetodoBusqueda metodoBusqueda = new MetodoBusqueda(personas);
+        MetodoBusquedaBinario mbb = new MetodoBusquedaBinario(personas);
+        mbb.showPersonByCodes();
+        mbb.showPersonByCode3();
 
         // int [] numero = {5,10,15,20,25,30};
         // int valor = metodoBusqueda.busquedalineal(numero, 25);

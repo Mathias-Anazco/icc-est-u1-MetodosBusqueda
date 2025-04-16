@@ -15,6 +15,12 @@ public class ShowConsole {
         System.out.println("Codigo ingresado: " + codigo);
         return codigo;
     }
+    public String getName(){
+        System.out.println("Ingrese el nombre: ");
+        String name = sc.next();
+        System.out.println("Nomabre ingresado: "+name);
+        return name;
+    }
     public void showMessage(String message){
         System.out.println(message);
     }
